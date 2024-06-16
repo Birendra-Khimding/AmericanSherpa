@@ -9,7 +9,7 @@ import About from './component/about/About'
 import Contact from './component/contact/Contact'
 import Cart from './component/cart/Cart'
 import Login from './component/login/Login'
-import {  Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import BlogDetail from './component/blogDetail/BlogDetail'
 import ItemDetail from './component/shopItem/ItemDetail'
 import shopData from './component/shopData/ShopData';
@@ -73,6 +73,7 @@ function App() {
 
   return (
     <>
+    < BrowserRouter>
 <Header />
     <Routes>
        <Route path="/" element = {< Home />} />
@@ -86,6 +87,7 @@ function App() {
        <Route path="/login" element = {< Login />} />
     </Routes>
 <Footer/>
+</BrowserRouter>
     </>
   )
 }
