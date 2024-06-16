@@ -1,0 +1,162 @@
+
+.blog{
+    margin-bottom: 5rem;
+}
+
+.blogHero{
+    height: 100vh;
+    overflow: hidden; 
+}
+
+.blogHero img{
+    width: 100%;
+    height: 100%;
+   
+}
+
+.blogCarousel .react-multi-carousel-item > div > div {
+    position: relative;
+    margin: 0;
+}
+
+.blogCarousel .react-multi-carousel-item > div > a  > img {
+ border-radius: 0;
+   height: 150px;
+   width: 100%;
+}
+
+.blogContent h3{
+    font-size: 1.25rem;
+    padding: 1rem;
+}
+.blogContent p {
+    padding-left: .25rem ;
+    padding-right: .25rem;
+    padding-bottom: .25rem;
+}
+
+.blog h1{
+    text-align: center;
+    margin: 3rem;
+    font-weight: 400;
+}
+
+section.blogContent{
+  margin-top: 5rem;
+}
+
+.blog .heroContent{
+    position: absolute; /* Absolute positioning within the hero section */
+    top: 45%;
+    left: 75%;
+    transform: translate(-50%, -50%); /* Centers the content */
+    text-align: center;
+    color: white;
+    width: 40vw;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.3); /* Semi-transparent background for better readability */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.5); /* Adds a subtle shadow */
+    z-index: 1; /* Ensures it stays above the image */
+}
+
+.blog .heroBtn{
+    position: absolute; /* Absolute positioning within the hero section */
+    top: 45%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
+
+.blog .heroBtn button{
+    padding: .75rem 1rem;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.5); 
+    font-weight: 600;
+    transition: transform 0.3s ease-in-out;
+}
+.blog .heroBtn button:hover{
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    transform: scale(1.1);
+}
+
+.heroContent h1{
+    margin: 0;
+    padding-bottom: 1rem;
+    width: 100%;
+
+}
+
+.heroContent ul {
+    padding: 0;
+    width: fit-content;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.heroContent ul li{
+    padding: 0;
+    list-style: square;
+}
+
+@media (max-width: 1000px){
+    .blog .heroContent{
+       padding: .5rem;
+       margin-left: .5rem;
+       top: 43%;
+       left: 50%;
+       width: 50vw;
+    }
+
+    .blog .heroBtn{
+        position: absolute; /* Absolute positioning within the hero section */
+        top: 61%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-top: 1rem;
+    }
+
+    .heroContent ul{
+        margin-bottom: 0;
+    }
+
+    .heroBtn{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 800px){
+    .blog .heroContent h1{
+        font-size: 1.5rem;
+    }
+    .blog .heroContent p{
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 600px){
+    .blog .heroContent{
+     width: 80vw;
+    }
+    .blog .heroContent h1{
+        font-size: 1.5rem;
+        width: 100%;
+       }
+       .blog .heroContent p, .blog .heroContent li{
+        font-size: 14px;
+       }
+
+       .blog .heroBtn button{
+        padding: .5rem .75rem;
+       font-size: 14px;
+    }
+
+    .blogHero img{
+        object-fit: cover;
+       
+    }
+}
+

@@ -1,0 +1,188 @@
+.about{
+    margin-top: 5rem;
+    text-align: center;
+
+    
+}
+
+.about h1{
+    margin: 2rem;
+}
+
+.aboutInformation{
+    display: flex;
+    width: 70vw;
+    margin: 0 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 10px  rgba(0, 0, 0, 0.3);
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.aboutInformation .story{
+    flex: 5;
+    margin: 1rem 2rem;
+    padding: 1rem;
+    text-align: left;
+    margin-right: 0;
+}
+
+.aboutImage {
+    flex: 5;
+    overflow: hidden;
+    margin: 1rem 2rem;
+    margin-left: 0;
+}
+
+.aboutImage img{
+    width: 100%;
+    padding: 1rem;
+    background-color: rgb(236, 236, 236);
+    height: 100%;
+}
+
+.aboutConnect{
+    width: 80vw;
+    display: flex;
+    margin: 2rem;
+    box-shadow: 0 0 10px  rgba(0, 0, 0, 0.3);
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.connectImage{
+    flex: 1;
+}
+
+.connectImage img{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+}
+
+.connectLink{
+    flex: 1;
+}
+
+.connectLink .linkContainer{
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.connectLink .linkcontent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.connectLink .linkcontent img{
+    padding: 1rem 0;
+}
+.linkContainer .linkName{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 2rem;
+
+}
+
+.linkContainer .linkName span{
+    width: 100%;
+    text-align: left;
+}
+
+.connectLink h3{
+    padding: 1rem  0;
+    margin: 0;
+}
+.connectLink img{
+    width: 3.5rem;
+}
+
+@media (max-width: 1000px){
+    .aboutInformation{
+      flex-direction: column-reverse;
+    }
+
+    .aboutInformation .aboutImage{
+      margin: 0;
+      padding: 1rem;
+    }
+
+    .aboutInformation .aboutImage img{
+        height: 500px;
+    }
+
+    .aboutInformation .story{
+        margin: 0;
+    }
+    .aboutInformation{
+     width: 80vw;
+    
+    }
+
+    .about h1{
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 600px){
+
+    .aboutConnect{
+        background-image: url('../../images/link.png');
+        background-size: cover;
+        background-position: center;
+    }
+    .aboutConnect .connectImage {
+        display: none;
+    }
+
+    .connectLink .outerLink{
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        height: fit-content;
+        margin: 1rem auto;
+        box-shadow: 0 0 10px  rgba(0, 0, 0, 0.3);
+        padding: 0 1rem;
+        background-color: rgb(247, 247, 247);
+        border-radius: 10px;
+    }
+
+    .connectLink .linkContainer{
+        padding: 0;
+        
+    }
+
+    .linkContainer .linkcontent img{
+        width: 2.5rem;
+    }
+
+    .about h1{
+        font-size: 1.5rem;
+    }
+
+
+}
+
+@media (max-width: 475px){
+    .aboutInformation .aboutImage img{
+        height: 375px;
+    }
+    .aboutInformation .story{
+        text-align: center;
+        padding: 0;
+        font-size: 14px;
+    }
+    .linkContainer .linkcontent img{
+        width: 2rem;
+    }
+    .linkContainer .linkName span{
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,108 @@
+.popupOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    justify-content: flex-end;
+  }
+  
+  .popupContent {
+    position: relative; /* Ensure relative positioning for absolute positioning of close button */
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 40vw;
+    text-align: center;
+
+  }
+  .popupContent .popupInfo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1rem;
+  }
+
+  .popupInfo .popupList{
+    font-size: 1.15rem;
+  }
+  .popupContent img{
+    width: 30%;
+    height: 30%;
+  }
+
+  .popupContent h2{
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    font-weight: bold;
+  }
+  
+  .popupActions {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem;
+  }
+
+  .popupActions a{
+    border: 1px solid black;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    background-color: rgb(219, 219, 219);
+  }
+
+  .closeButton {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 2.5rem;
+  }
+  
+  .closeButton:hover {
+    color: #0056b3;
+  }
+
+@media (max-width: 800px){
+  .popupContent{
+    width: 50vw;
+  }
+  .popupContent h2{
+    font-size: 1.15rem;
+    padding-bottom: .5rem;
+    padding-top: 1.5rem;
+  }
+  .popupInfo img{
+    width: 40%;
+    height: 40%;
+  }
+  .popupActions {
+    display: flex;
+    justify-content: space-around;
+    margin: .5rem;
+  }
+
+  .popupActions a{
+    padding: .25rem .5rem;
+    font-size: .75rem;
+  }
+
+}
+
+@media (max-width: 600px){
+  .popupContent{
+    width: 60vw;
+  }
+}
+@media (max-width: 475px){
+  .popupContent{
+    width: 80vw;
+  }
+}

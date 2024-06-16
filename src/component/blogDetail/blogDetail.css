@@ -1,0 +1,353 @@
+.blogContainer{
+    display: flex;
+    margin-top: 5rem;
+}
+.blogDetail{
+    flex: 8;
+    margin-bottom: 5rem;
+    margin-left: 2rem;
+    margin-right: 4rem;
+    border-radius: 10px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+.blogDetail h2{
+    font-weight: 600;
+    font-size: 1.75rem;
+    color: rgb(65, 65, 65);
+}
+.blogDetail h4{
+    padding-left: 2rem;
+}
+
+.blogDetail img{
+    width: 80%;
+    height: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+}
+.blogDetail p{
+    padding: 2rem;
+}
+
+
+.relatedContent{
+    flex: 2;
+    margin-bottom: 5rem;
+    border-radius: 10px;
+    margin-right: 2rem;
+    height: fit-content;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.relatedContent img{
+    width: 100%;
+    height: auto;
+}
+
+.relatedContent h3{
+    font-size: 1.25rem;
+    padding: 1rem;
+}
+
+.relatedPostItem{
+    display: flex;
+    overflow: hidden;
+    padding: .5rem;
+}
+
+.relatedPostItem img{
+    width: 40%;
+}
+.relatedPostContent{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+}
+
+.commentsSection{
+    width: fit-content;
+    margin-left: 2rem;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 5rem;
+    border-radius: 10px;
+    padding-bottom: .5rem;
+
+
+}
+
+.commentsSection h3{
+    text-align: left;
+    padding: 1rem ;
+}
+
+.commentForm{
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+
+}
+
+.commentForm .commentList{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.commentForm textarea{
+   width: 30vw;
+}
+
+.commentForm img{
+    margin: 0 2rem;
+    padding: .5rem;
+    width: 70px;
+    border: 1px solid black;
+    border-radius: 50px;
+    background-color: rgb(201, 201, 201);
+}
+
+.commentForm textarea{
+    margin: 0 1.5rem;
+    border-radius: 5px;
+}
+
+.commentForm button {
+    margin: 0 2rem;
+    padding: .5rem;
+    border-radius: 10px;
+}
+
+
+
+
+
+.commentsList .comment{
+   display: flex;
+   align-items: center;
+margin-left: 5rem;
+background-color: rgb(233, 233, 233);
+padding: 1rem;
+border-radius: 10px;
+margin-bottom: 1rem;
+width: fit-content;
+min-width: 50%;
+max-width: 50vw;
+align-items: flex-start;
+margin-right: 1rem;
+
+}
+
+
+
+.commentsList .comment img{
+    margin: 0 .5rem;
+    padding: .5rem;
+    width: 50px;
+    border: 1px solid black;
+    border-radius: 50px;
+    background-color: rgb(201, 201, 201);
+ }
+
+ .commentsList .comment p{
+    padding: 0;
+    padding-left: 2rem;
+    word-wrap: break-word; /* Ensure long words break and wrap to the next line */
+    overflow-wrap: break-word; /* Break words that are too long */
+    overflow: hidden; /* Hide overflow text */
+    white-space: normal;
+ }
+
+ @media (max-width: 1000px){
+    .blogContainer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blogDetail{
+        margin-right: 2rem;
+    }
+    .relatedPostItem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        
+    }
+
+    .relatedPostItem img{
+        width: 150px;
+        height: 100px;
+    }
+
+    .relatedPosts h3{
+        text-align: center;
+    }
+    .relatedPostsList{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        
+    }
+
+    .relatedContent{
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+        padding: 0 2rem;
+    }
+
+    .commentsSection{
+        margin-left: 2rem;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+        margin-bottom: 5rem;
+        border-radius: 10px;
+        padding-bottom: 2rem;
+    
+    
+    }
+    .commentForm textarea{
+        width: 40vw;
+     }
+     .commentsList .comment{
+max-width: 60vw;
+     
+     }
+ }
+
+ @media (max-width: 800px){
+    .commentsSection{
+        width: 90vw;
+    }
+    .commentForm{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    
+    }
+
+    .commentForm img{
+        width: 55px;
+        margin: 0 1rem;
+    
+    }
+    .commentForm textarea{
+        width: 45vw;
+        margin-right: 0;
+    }
+
+    .commentForm button{
+        flex: 2;
+        font-size: .75rem;
+    }
+    
+ }
+
+ @media (max-width: 600px) {
+    .blogDetail img{
+        height:400px ;
+        width: 90%;
+        margin-bottom: 0;
+    }
+    .blogDetail h2{
+        font-size: 1.5rem;
+    }
+    .blogDetail h4{
+        font-size: 15px;
+    }
+
+    .blogDetail p{
+        font-size: 15px;
+    }
+    .commentForm img{
+        width: 45px;
+
+    }
+    .commentForm textarea{
+        margin: 0;
+     }
+     .commentForm button{
+        margin: 0 1rem;
+     }
+     .commentsList .comment{
+        max-width: 70vw;
+             
+             }
+ }
+
+
+ @media (max-width: 475px){
+    .commentsSection{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .blogDetail h2{
+        font-size: 1.25rem;
+    }
+    .blogDetail p{
+        padding: 1rem 1rem;
+        text-align: center;
+    }
+    .blogContainer .relatedContent{
+        padding: 0;
+    }
+    .relatedContent h3{
+        padding: 1rem 0
+    }
+    .relatedContent .relatedPostsList {
+        flex-direction: column;
+        margin: 0 .5rem;
+    }
+
+    .relatedContent .relatedPostsList .relatedPostItem{
+        margin-left: .5rem;
+        margin-right: .5rem;
+    }
+    .relatedPostsList .relatedPostItem img{
+        height: 80px;
+        width: 100%;
+    }
+    .blogDetail h4{
+        font-size: 14px;
+    }
+
+    .blogDetail p{
+        font-size: 14px;
+    }
+    .blogDetail img{
+        height:325px ;
+    }
+
+    .commentsList .comment{
+        margin-left: 1rem;
+        max-width: 80vw;
+        margin-right: 1rem;
+    }
+    .commentForm img{
+        width: 40px;
+
+    }
+
+    .commentsList .comment img{
+        width: 40px;
+    }
+
+    .commentsSection .commentForm{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+        gap:1rem
+    }
+    .commentForm textarea{
+width: 60vw;
+    }
+ }

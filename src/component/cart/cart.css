@@ -1,0 +1,220 @@
+.cartItems{
+    margin-top: 5rem;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.cartItems h1{
+    margin: 2rem;
+}
+
+.cartContainer{
+    display: flex;
+}
+
+.cartList{
+    flex: 7;
+    margin: 1rem;
+    margin-bottom: 2rem;
+}
+
+.cartList ul{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.cartList li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0,.3);
+    margin-bottom: .5rem;
+    padding: 1rem;
+}
+
+.cartList li .cartImage{
+    flex: 2;
+}
+.cartList li .cartImage img{
+    width: 100%;
+}
+
+.cartList li .cartListCtn{
+    flex: 8;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.cartListCtn .cartDiscription{
+    flex: 7;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cartListCtn .cartDiscription .impItems{
+    font-weight: 600;
+}
+.cartListCtn .cartButton{
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cartButton .btnControll{
+    display: flex;
+    align-items: center;
+}
+
+button.removeButoon{
+    margin: 2rem;
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    border: none;
+}
+
+.cartList button{
+    margin: 0 .5rem;
+}
+.cartList span{
+    width: 100%;
+}
+
+span.quantity{
+    width: fit-content;
+    padding: 1rem;
+}
+.cartList img{
+    width: 20%;
+    height: 200px;
+}
+
+.cartItemTotal{
+    flex: 3;
+    height: fit-content;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0,.3);
+}
+
+.cartItems h3{
+    padding: 1rem;
+}
+
+.cartItemContainer{
+    width: 100%;
+    padding: 1.5rem;
+}
+
+.cartItemContainer .subContainer{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+.cartItemContainer hr{
+    margin-bottom: 1rem;
+}
+
+.cartItemTotal .orderCheckout{
+    border: 1px solid black;
+    margin-bottom: 1rem;
+    padding: .3rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(194, 194, 194);
+}
+
+@media (max-width: 1000px){
+    .cartList ul li{
+        display: flex;
+        flex-direction: column;
+    }
+    .cartList ul li .cartImage{
+        width: 50%;
+    }
+    .cartList ul li .cartListCtn{
+      padding-top: 1rem;
+    }
+
+
+}
+
+@media (max-width: 900px){
+    .cartList ul li .cartListCtn{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+      }
+      .cartListCtn .cartDiscription{
+        width: 100%;
+      }
+}
+
+@media (max-width: 700px){
+    .cartItems h1{
+        margin-bottom: .5rem;
+    }
+    .cartContainer{
+        flex-direction: column;
+    }
+
+    .cartContainer .cartList{
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 475px){
+    .cartList ul li{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: .5rem;
+    }
+    
+    .cartList ul li .cartImage {
+    flex: 5;
+    }
+
+    .cartList ul li .cartListCtn{
+        flex: 5;
+        height: 100%;
+        padding: 0;
+    }
+
+     .cartListCtn .impItems{
+        margin-bottom: 1.2rem;
+     }
+     .cartListCtn .cartButton span{
+       padding: .5rem;
+     }
+
+     .cartListCtn .cartButton .removeButoon{
+        font-size: 13px;
+     }
+     .cartListCtn .cartButton button{
+     }
+
+
+    .cartListCtn .cartDiscription{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cartDiscription span{
+        font-size: 15px;
+    }
+    .cartButton {
+        flex-direction: column;
+    }
+    .cartButton .btnControll{
+        margin-bottom: .5rem;
+    }
+
+    .cartItemTotal a.orderCheckout{
+        font-size: 14px;
+    }
+}

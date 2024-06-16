@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+  font-family: 'Montserrat', "Universal Sans Display",sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Universal Sans Display", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+}
+
+a{
+  font-size: 15px;
+}
+
+h2{
+  font-size: 1.25rem;
+}
+
+
+
+

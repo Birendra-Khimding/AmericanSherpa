@@ -1,0 +1,58 @@
+.react-multi-carousel-track{
+ padding-top: 2rem;
+ padding-bottom: 4rem;
+}
+
+.react-multi-carousel-item div {
+display: flex;
+justify-content: center;
+flex-direction: column;
+text-align: center;
+margin: 0 2rem;
+}
+.react-multi-carousel-item div {
+    height: 100%;
+
+}
+.react-multi-carousel-item > div {
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    
+
+}
+
+.react-multi-carousel-item div img{
+    height: 100%;
+    margin-bottom: 1rem;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.react-multi-carousel-item div h2{
+    padding: 1rem;
+}
+
+.react-multiple-carousel__arrow--left{
+    left: calc(2.5% + 1px);
+}
+
+.react-multiple-carousel__arrow--right{
+    right: calc(2.5% + 1px);
+}
+
+.react-multi-carousel-track{
+    background-color: rgb(239, 240, 240);
+}
+
+
+
+.carouselContainer{
+    margin-bottom: 5rem;
+    z-index: -1;
+    overflow: hidden;
+
+}
+
+.react-multi-carousel-list  {
+width: 100%;
+
+}

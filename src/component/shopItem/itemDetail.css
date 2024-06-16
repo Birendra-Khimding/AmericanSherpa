@@ -1,0 +1,396 @@
+.productDetail{
+    display: flex;
+    margin-top: 5rem;
+    height: 90vh;
+
+}
+
+.productDetail img{
+    width: 60%;
+    height: 60vh;
+    box-shadow: 4px 4px 50px rgba(0, 0, 0,.3);
+}
+
+.imgContainer{
+    flex: 7;
+    margin: 2rem;
+    margin-right: 0;
+}
+
+.imgContainer > img{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    background-color: rgb(245, 245, 245);
+}
+
+.infoContainer{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 4px 4px 50px rgba(0, 0, 0,.3);
+    margin: 2rem;
+    margin-left: 0;
+    height: 77vh;
+    overflow: hidden;
+}
+
+.infoContainer h1{
+    padding-top: 1rem;
+}
+
+.infoContainer p{
+    padding: .5rem;
+}
+.infoContainer .price{
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: rgb(65, 65, 65);
+}
+
+.optionsForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.colorOptions {
+    text-align: center;
+    padding: 1rem;
+    padding-top: 0;
+}
+
+.colorOptions label{
+    font-size: 1.25rem;
+}
+.colorOptions button{
+    margin: .25rem;
+    padding: 2rem;
+    border-radius: 10px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.colorOptions .selected{
+    opacity: 1;
+}
+.colorOptions .Red-btn{
+    background-color: rgb(134, 27, 27);
+}
+
+.colorOptions .Green-btn{
+    background-color: rgb(17, 97, 31);
+}
+.colorOptions .Blue-btn{
+    background-color: rgb(10, 16, 99);
+}
+.colorOptions .Black-btn{
+    background-color: rgb(20, 18, 18);
+}
+
+.sizeOptions{
+padding: 1rem;
+text-align: center;
+padding-top: 0;
+}
+.sizeOptions label{
+    font-size: 1.25rem;
+}
+
+.sizeOptions button{
+    text-align: center;
+    padding: 1.25rem;
+    margin: .5rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.sizeOptions .selected{
+    border: 1px solid black;
+    background-color: rgb(107, 107, 107);
+    color: aliceblue;
+}
+.addToCartButton{
+    margin: 1rem;
+    font-size: 1.25rem;
+    padding: 1rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    background-color: rgb(182, 182, 182);
+    margin-top: 0;
+}
+.addToCartButton:hover{
+    transform: scale(1.1);
+}
+
+.itemInfo{
+    text-align: center;
+    padding: 1.5rem;
+    padding-top: .5rem;
+}
+.thumbnailContainer{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 2rem;
+
+}
+.thumbnailContainer img{
+
+    height: 120px;
+    width: 12%;
+    cursor: pointer;
+    margin: .5rem;
+    padding: .5rem;
+    background-color: rgb(245, 245, 245);
+}
+
+.itemErrorMessage{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+.errorContainer{
+    position: relative;/* Ensure relative positioning for absolute positioning of close button */
+    background: rgb(241, 240, 240);
+    border-radius: 8px;
+    padding: 5rem;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+.errorContainer button{
+    position: absolute;
+    font-size: 1.75rem;
+    right: 5%;
+    top: 10px;
+    border: 0;
+    background-color: rgb(201, 201, 201);
+    border-radius: 5px;
+}
+.errorContainer  h3{
+    font-weight: 500;
+    font-size: 1.25rem;
+    
+}
+
+@media (max-width: 1200px){
+    .imgContainer{
+        flex: 6;
+    }
+    .infoContainer{
+        flex: 4;
+    }
+    .itemInfo{
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 1000px){
+    .imgContainer >img{
+        width: 70%;
+        height: 53vh;
+    }
+    .thumbnailContainer img{
+
+        height: 100px;
+        width: 12%;
+        cursor: pointer;
+        margin: .5rem;
+        padding: .5rem;
+        background-color: rgb(245, 245, 245);
+    }
+    .infoContainer h1{
+        font-size: 1.5rem;
+    }
+    .infoContainer p{
+        font-size: 15px;
+    }
+    .infoContainer .price{
+        font-size: 1.1rem;
+    }
+    .colorOptions{
+        padding-top: 0;
+    }
+    .colorOptions button{
+        padding: 1.5rem;
+
+    }
+    .sizeOptions{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .sizeOptions button{
+        padding: 1.1rem;
+    }
+    .addToCartButton{
+        margin: 1rem;
+        font-size: 1rem;
+        padding: 1rem;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+        background-color: rgb(182, 182, 182);
+    }
+
+    .itemInfo{
+        padding-top: 0;
+    }
+
+    .infoContainer{
+        height: fit-content;
+    }
+    .errorContainer{
+       padding: 4rem;
+    }
+
+}
+
+@media (max-width: 800px){
+    .colorOptions button{
+        padding: 1rem;
+
+    }
+
+    .sizeOptions button{
+        padding: .7rem;
+    }
+    .addToCartButton{
+        margin: 1rem;
+        font-size: .75rem;
+        padding: .75rem;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+        background-color: rgb(182, 182, 182);
+    }
+    .itemInfo{
+        padding: 0;
+    }
+    .itemInfo p{
+        font-size: .95rem;
+    }
+
+
+}
+
+@media (max-width: 600px){
+   .productDetail{
+    flex-direction: column;
+    height: fit-content;
+   }
+
+  .productDetail .imgContainer{
+    margin: 0;
+  }
+
+  .imgContainer >img{
+    width: 60%;
+    height: 40vh;
+}
+.thumbnailContainer {
+    margin-top: 1rem;
+    gap: 1rem;
+}
+.thumbnailContainer img{
+
+    height: 80px;
+    width: 12%;
+    cursor: pointer;
+    margin: .5rem;
+    padding: .5rem;
+    background-color: rgb(245, 245, 245);
+}
+
+.infoContainer{
+    margin: 1rem 0;
+}
+.optionsForm .optionContainer {
+    display: flex;
+    padding-top: .5rem;
+}
+
+.optionContainer .colorOptions{
+    padding-bottom: 0;
+}
+.infoContainer h1{
+    font-size: 1.25rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+.infoContainer p{
+    font-size: 14px;
+    padding-bottom: 0;
+}
+
+.optionsForm .optionContainer label{
+    font-size: 1.1rem;
+}
+ .itemInfo{
+    padding-bottom: 1rem;
+}
+
+.infoContainer .price{
+    font-size: 15px;
+}
+
+.errorContainer{
+    padding: 4rem;
+}
+.errorContainer h3{
+    font-size: 1.1rem;
+}
+
+.errorContainer button{
+    font-size: 1.5rem;
+}
+.colorOptions button{
+    margin: .5rem;
+    padding: 1.25rem 1rem;
+    border-radius: 10px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+}
+
+@media (max-width: 450px){
+    .imgContainer >img{
+        width: 60%;
+        height: 35vh;
+    }
+    .thumbnailContainer {
+        margin-top: 1rem;
+    }
+    .thumbnailContainer img{
+    
+        height: 65px;
+        width: 13%;
+        cursor: pointer;
+        margin: .5rem;
+        padding: .5rem;
+        background-color: rgb(245, 245, 245);
+    }
+
+    .errorContainer{
+      padding: 3.5rem 2rem;
+    }
+
+
+}

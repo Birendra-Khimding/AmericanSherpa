@@ -1,0 +1,283 @@
+video{
+    position: relative;
+     top: 0;
+     z-index: -1;
+     filter: brightness(65%);
+     height: 100vh;
+     width: 100%;
+     object-fit: cover;
+   }
+
+   .title{
+    margin: 1rem;
+    margin-top: 2rem;
+   }
+
+   .title h3{
+    text-align: center;
+    padding: 3rem;
+    padding-bottom: 2rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+   }
+
+   .slideContent h2{
+    font-weight: 500;
+    font-size: 1.15rem;
+   }
+
+   .posterContainer{
+    display: flex;
+    justify-content: space-around;
+    height: 60vh;
+    margin-bottom: 7rem;
+   }
+
+   .posterContainer .poster .midScreen,.posterContainer .poster .smallScreen{
+display: none;
+   } 
+
+   .overlay {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    color: aliceblue;
+    text-align: center;
+    width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+    max-height: 40vh;
+    padding-top: 2rem;
+  }
+
+  .overlay h1{
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .overlay .homeHeroTitle{
+    
+    padding: 1rem 0;
+    margin-bottom: 7rem;
+  }
+  .overlay .homeHeroTitle p{
+    padding: 0 3rem;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    font-size: 1.25rem;
+  }
+.homeHerocontainer{
+  display: flex;
+
+}
+  .homeHerocontainer .productHero{
+    background: rgba(65, 65, 65, 0.5); /* Semi-transparent background for better readability */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    height: 10%;
+    margin-top: 1rem;
+    margin-right: .5rem;
+    padding-bottom: 1rem;
+    flex: 1;
+
+  }
+
+  .homeHerocontainer .blogHero{
+    background: rgba(65, 65, 65, 0.5); /* Semi-transparent background for better readability */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.5);
+    height: 10%;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    padding-bottom: 1rem;
+    flex: 1;
+   
+  }
+
+  .homeHerocontainer a{
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.5);
+    font-weight: 600;
+    background-color: black;
+  }
+
+
+.overlay .homeHerocontainer{
+  display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 1150px){
+
+  .posterContainer{
+    height: 32vw;
+  }
+  .featuredBlog{
+    height: 100%;
+  }
+  .featuredBlog .poster{
+    height: 100%;
+    margin: 0;
+    min-width: 200px;
+    min-height: 300px;
+    width: 25vw;
+    overflow: hidden;
+  }
+
+  .featuredBlog .poster img{
+    min-height: 150px;
+  }
+
+  .featuredBlog .poster .largeScreen, .featuredBlog .poster .smallScreen{
+    display: none;
+  }
+
+  .featuredBlog .poster .midScreen{
+    display: block;
+  }
+
+}
+
+@media (max-width: 1000px){
+
+  .overlay h1{
+    font-size: 1.75rem;
+  }
+
+  .overlay .homeHeroTitle{
+    padding: 1rem 0;
+    margin-bottom: 3rem;
+  }
+  .overlay .homeHeroTitle p{
+    font-size: 1.1rem;
+  }
+
+}
+
+@media (max-width: 800px){
+  .overlay .homeHeroTitle p{
+    width: 80%;
+  }
+}
+
+@media (max-width: 600px){
+
+  .overlay h1{
+    font-size: 1.50rem;
+  }
+  .overlay .homeHeroTitle p{
+    width: 80%;
+    font-size: 14px;
+  }
+
+  .homeHerocontainer  h2{
+   font-size: 1.1rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .homeHerocontainer p{
+    font-size: 14px;
+  }
+
+  .posterContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+    grid-template-rows: auto auto;
+    
+  }
+
+  .posterContainer .featuredBlog{
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 5rem;
+    height: 30vh;
+  }
+
+}
+
+@media (max-width: 450px){
+  .posterContainer .featuredBlog {
+    margin-bottom: 1rem;
+  }
+  .overlay .homeHeroTitle p{
+    width: 90%;
+  }
+
+  .featuredBlog .poster{
+    min-width: auto;
+    width: 40vw;
+    min-height: 20vh;
+  }
+  .featuredBlog .poster h2{
+    font-size: 1rem; 
+    padding: .5rem 0;
+
+  }
+  .featuredBlog .poster img{
+    min-height: 100px;
+  }
+
+  .featuredBlog .poster p{
+    min-height: 100px;
+    font-size: 13px;
+  }
+  .featuredBlog .poster .largeScreen, .featuredBlog .poster .midScreen{
+    display: none;
+  }
+
+  .featuredBlog .poster .smallScreen{
+    display: block;
+  }
+
+}
+
+@media (max-width: 400px){
+  .homeHerocontainer{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .homeHerocontainer .productHero{
+    margin: 0;
+    margin-bottom: .75rem;
+  }
+
+  .homeHerocontainer .blogHero{
+    margin: 0;
+  }
+  .overlay .homeHeroTitle p{
+    width: 100%;
+    font-size: 14px;
+  }
+  .overlay h1{
+    font-size: 1.25rem;
+  }
+  
+  .homeHerocontainer h2{
+    font-size: 16px;
+  }
+
+  .homeHerocontainer p{
+    font-size: 13px;
+  }
+
+  .homeHerocontainer a{
+    font-size: 13px;
+  }
+
+  .title{
+    margin-top: 0;
+  }
+}
