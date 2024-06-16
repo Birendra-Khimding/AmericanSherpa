@@ -1,10 +1,11 @@
 {
-  "homepage": "https://Birendra-Khimding.github.io/AmericanSherpa/",
+  "homepage": "https://Birendra-Khimding.github.io/blog",
   "name": "asherpa",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
