@@ -305,6 +305,7 @@ max-width: 60vw;
     .relatedContent .relatedPostsList {
         flex-direction: column;
         margin: 0 .5rem;
+        width: 50vw;
     }
 
     .relatedContent .relatedPostsList .relatedPostItem{

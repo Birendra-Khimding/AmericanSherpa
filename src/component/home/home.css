@@ -206,7 +206,47 @@ display: none;
 
 }
 
-@media (max-width: 450px){
+@media (max-width: 475px){
+  .overlay .homeHeroTitle{
+    margin-bottom: 0;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+  }
+  .homeHeroTitle h1{
+    width: 100%;
+    text-align: center;
+  }
+
+
+  .homeHerocontainer{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .homeHerocontainer .productHero{
+    margin: 0;
+    margin-bottom: .75rem;
+    width: 90vw;
+  }
+
+  .homeHerocontainer .blogHero{
+    margin: 0;
+    width: 90vw;
+  }
+
+  .homeHerocontainer h2{
+    font-size: 15px;
+    padding: .5rem;
+  }
+
+  .homeHerocontainer p{
+    font-size: 13px;
+  }
+  
+  .homeHerocontainer a{
+    font-size: 12px;
+  }
   .posterContainer .featuredBlog {
     margin-bottom: 1rem;
   }
@@ -259,22 +299,24 @@ display: none;
   }
   .overlay .homeHeroTitle p{
     width: 100%;
-    font-size: 14px;
+    font-size: 13px;
+    padding: 0;
+    padding: 0 .75rem;
   }
   .overlay h1{
     font-size: 1.25rem;
   }
   
   .homeHerocontainer h2{
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .homeHerocontainer p{
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .homeHerocontainer a{
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .title{
