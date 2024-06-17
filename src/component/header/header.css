@@ -143,6 +143,10 @@ nav:hover{
 }
 
 @media (max-width: 600px){
+   nav ul .center{
+        top: 35px;
+
+    }
     .nav ul{
         justify-content: center;
     }
@@ -168,4 +172,29 @@ nav:hover{
         top: 35px;
         padding-right: 25px;
     }
+}
+
+@media (max-height: 850px){
+    ul .center{
+        top: 40px;
+
+    }
+}
+
+@media (max-height: 800px){
+    ul .center{
+
+        top: 40px;
+        padding-right: 35px;
+
+}
+}
+
+@media (max-height: 700px){
+    ul .center{
+
+        top: 40px;
+        padding-right: 40px;
+
+}
 }
